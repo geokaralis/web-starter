@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e5e5e5;
+  color: #424243;
+  font-family: 'Lato', sans-serif;
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+p {
+  line-height: 1.1666;
+}
+
+.link {
+  position: relative;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.welcome {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.welcome__content h1 {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  border: 0;
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 1.1666;
+  position: relative;
+}
+
+.label {
+  padding: 2px 8px;
+  background: #fff;
+  font-weight: 700;
+}
+
+.welcome__footer {
+  padding: 4rem 0;
+  font-size: 12px;
+  background: #424243;
+  color: #e5e5e5;
+}
+
+.welcome__footer .link::after {
+  background-color: #e5e5e5;
+}
+
+@media (max-width:980px) {
+  .welcome__content h1 {
+    font-size: 4rem;
+  }
+}
