@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "instafeed.js": "^1.4.1",
-    "jquery": "^3.2.1",
+    "jquery": "^3.4.0",
     "pace": "0.0.4",
     "smooth-scroll": "^12.1.5",
     "svg-url-loader": "^2.3.1"
